@@ -1,5 +1,5 @@
 <%- include('../partials/header') %>
-<form action="/sneakers<%= sneaker.id%>?_method=PUT" method="POST">
+<form action="/sneakers/<%= sneaker.id %>?_method=PUT" method="POST">
   <p>Model</p><input type="text" name="model" value="<%= sneaker.model %>"><br>
   <p>Nickname</p><input type="text" name="name" value="<%= sneaker.name %>"><br>
   <p>SKU</p><input type="text" name="sku" value="<%= sneaker.sku %>"><br>
