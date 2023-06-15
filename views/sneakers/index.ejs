@@ -1,23 +1,16 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Sneakers</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1>Sneakers</h1>
-    <ul>
-      <% sneakers.forEach((s) => { %>
-        <li>
-          <a href="/sneakers/<%= s.id %>">
-          <%= s.model %>
-            -
-          <%= s.name %>
-            -
-          <%= s.year %>
-          </a>
-        </li>
-      <% }); %>
-    </ul>
-  </body>
-</html>
+<%- include('../partials/header') %>
+<ul>
+  <% sneakers.forEach((s) => { %>
+    <li>
+      <a href="/sneakers/<%= s.id %>">
+        <%= s.model %>
+        -
+        <%= s.name %>
+        -
+        <%= s.year %>
+      </a>
+    </li>
+  <% }); %>
+</ul>
+<%- include('../partials/footer') %>
+  
