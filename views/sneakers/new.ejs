@@ -1,0 +1,13 @@
+<%- include('../partials/header') %>
+<form action="/sneakers" method="POST">
+  <p>Model</p><input type="text" name="model"><br>
+  <p>Nickname</p><input type="text" name="name"><br>
+  <p>SKU</p><input type="text" name="sku"><br>
+  <p>Colors</p><input type="text" name="color"><br>
+  <p>Year</p><input type="text" name="year"><br>
+  <p>Retail Price</p><input type="text" name="retail"><br>
+  <p>Image URL</p><input type="text" name="image"><br>
+  <label>Owned<input type="checkbox" name="owned"></label><br>
+  <button type="submit">Save Skill</button>
+</form>
+<%- include('../partials/footer') %>

@@ -97,5 +97,9 @@ module.exports = {
     getOne: (id) => {
         id = parseInt(id);
         return sneakers.find(sneaker => sneaker.id === id);
+    },
+    create: (newSneaker) => {
+        newSneaker.id = Date.now() % 1000000;
+        sneakers.push(newSneaker);
     }
 };
