@@ -7,6 +7,6 @@ var sneakersCtrl = require('../controllers/sneakers');
 // GET /sneakers
 router.get('/', sneakersCtrl.index);
 // GET /sneakers/:id
-
+router.get('/:id', sneakersCtrl.show);
 
 module.exports = router;

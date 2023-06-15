@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sneaker</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h2><%= sneakers.model %> - <%= sneakers.name %></h2>
+    <h3><%= sneakers.year %> - <%= sneakers.color %></h3>
+    <img src="<%= sneakers.image %>" alt="<%= sneakers.model %> - <%= sneakers.name %> image">
+    <ul>
+        <li>
+            SKU: <%= sneakers.sku %>
+        </li>
+        <li>
+            Retail Price: <%= sneakers.retail %>
+        </li>
+        <li>
+            <%= sneakers.owned ? 'Currently Owned' : 'Not Owned'%>
+        </li>
+    </ul>
+  </body>
+</html>

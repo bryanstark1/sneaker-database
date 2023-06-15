@@ -9,11 +9,13 @@
     <ul>
       <% sneakers.forEach((s) => { %>
         <li>
+          <a href="/sneakers/<%= s.id %>">
           <%= s.model %>
             -
           <%= s.name %>
             -
           <%= s.year %>
+          </a>
         </li>
       <% }); %>
     </ul>

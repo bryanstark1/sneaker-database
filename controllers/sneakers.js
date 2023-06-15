@@ -6,6 +6,13 @@ const index = (req, res) => {
     });
 };
 
+const show = (req, res) => {
+    res.render('sneakers/show', {
+        sneakers: Sneaker.getOne(req.params.id)
+    });
+};
+
 module.exports = {
-    index
-}
+    index,
+    show
+};
