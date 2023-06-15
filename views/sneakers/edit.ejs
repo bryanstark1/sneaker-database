@@ -1,0 +1,13 @@
+<%- include('../partials/header') %>
+<form action="/sneakers<%= sneaker.id%>?_method=PUT" method="POST">
+  <p>Model</p><input type="text" name="model" value="<%= sneaker.model %>"><br>
+  <p>Nickname</p><input type="text" name="name" value="<%= sneaker.name %>"><br>
+  <p>SKU</p><input type="text" name="sku" value="<%= sneaker.sku %>"><br>
+  <p>Colors</p><input type="text" name="color" value="<%= sneaker.color %>"><br>
+  <p>Year</p><input type="text" name="year" value="<%= sneaker.year %>"><br>
+  <p>Retail Price</p><input type="text" name="retail" value="<%= sneaker.retail %>"><br>
+  <p>Image URL</p><input type="text" name="image" value="<%= sneaker.image %>"><br>
+  <label>Owned<input type="checkbox" name="owned" <%= sneaker.owned ? 'checked' : '' %>></label><br>
+  <button type="submit">Update Sneaker</button>
+</form>
+<%- include('../partials/footer') %>
